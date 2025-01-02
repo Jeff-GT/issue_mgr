@@ -2,7 +2,7 @@
 
 from django.db import migrations
 
-def populate_role(apps, schemaedetior):
+def populate_role(apps, schemaeditor):
     entries = {
         "Product Owner": "The team member who defines requirements",
         "Developer": "The person on the team who works on issues",

@@ -9,6 +9,14 @@ class Role(models.Model):
   def __str__(self):
     return self.name
   
+
+class Groups(models.Model):
+  name = models.CharField(max_length=128)
+  description = models.CharField(max_length=256)
+
+  def __str__(self):
+    return self.name
+  
 class CustomUser(AbstractUser):
   role = models.ForeignKey(
     Role,
