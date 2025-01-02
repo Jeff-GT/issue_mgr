@@ -8,7 +8,7 @@ from .forms import (
   # Register your models here.
 class CustomUserAdmin(UserAdmin):
   list_display = [
-      "username", "email", "role", "is_staff"
+      "username", "email", "role"
   ]
   model = CustomUser
   add_form = CustomUserCreationForm
@@ -17,7 +17,7 @@ class CustomUserAdmin(UserAdmin):
     (
       None, {
         "classes": ("wide", ),
-        "fields": ("username", "email", "is_staff", "role", "groups", "password1", "password2"),
+        "fields": ("username", "email", "role", "groups", "password1", "password2"),
       }
   ),
   )
