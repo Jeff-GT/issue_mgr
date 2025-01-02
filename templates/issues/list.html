@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Posts{% endblock title %}
+
+{% block content %}
+<div class="list-title">
+  <h1>Published Posts</h1>
+</div>
+    
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card list-row text-white list-cards">
+        
+        <h3>To Do</h3>
+        {% for issue in to_do %}
+          <div class="card-body bg-dark text-white list-cards">
+            <a href="{%url 'detail' issue.id %}"><h5 class="card-title">{{ issue.name }} - <small>{{ issue.status }}</small></h5></a>
+        
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ issue.summary }}</h6>
+            <p class="card-text">{{ issue.description| truncatechars:128 }}</p>
+        
+            <a href="{% url 'detail' issue.id %}" class="card-link">Continue reading...</a>
+          </div>
+        {% endfor %}
+        
+      </div>
+    </div>
+    
+    <div class="col">
+      <div class="card list-row text-white list-cards">
+      
+        <h3>In Progress</h3>
+        {% for issue in in_progress %}
+          <div class="card-body bg-dark text-white list-cards">
+            <a href="{%url 'detail' issue.id %}"><h5 class="card-title">{{ issue.name }} - <small>{{ issue.status }}</small></h5></a>
+      
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ issue.summary }}</h6>
+            <p class="card-text">{{ issue.description| truncatechars:128 }}</p>
+      
+            <a href="{% url 'detail' issue.id %}" class="card-link">Continue reading...</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card list-row text-white list-cards">
+      
+        <h3>Done</h3>
+        {% for issue in done %}
+          <div class="card-body bg-dark text-white list-cards">
+            <a href="{%url 'detail' issue.id %}"><h5 class="card-title">{{ issue.name }} - <small>{{ issue.status }}</small></h5></a>
+      
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{ issue.summary }}</h6>
+            <p class="card-text">{{ issue.description| truncatechars:128 }}</p>
+      
+            <a href="{% url 'detail' issue.id %}" class="card-link">Continue reading...</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    
+  </div>
+</div>  
+{% endblock content %}                                                                           

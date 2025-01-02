@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Log Out{% endblock title %}
+
+{% block content %}
+<div class="reset-success text-white">
+  <h1>Logging Out</h1>
+  
+  <form method="POST">
+    {% csrf_token %}
+    <label for="logout">Are you sure you want to log out?</label>
+    <div>
+      <button type="submit" class="btn btn-danger bttn logout-btn">GET ME OUT!</button>
+    </div>
+  </form>
+</div>
+{% endblock content %}

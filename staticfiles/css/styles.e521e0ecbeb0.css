@@ -1,0 +1,175 @@
+body
+{
+  background-color: rgb(70, 70, 70);
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+h1,h3 {
+  color: rgb(235, 235, 235);
+}
+
+.content_home{
+  padding-top: 50px;
+  color: white;
+  text-align: center;
+}       
+a{
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+}
+
+a:hover{
+  color: rgb(161, 161, 161);
+  
+  text-decoration: underline;
+}
+
+
+/* ****************************** HOME  ****************************** */
+
+.home_intro{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.content_home{
+  text-align: center;
+  width: 60%;margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(235, 235, 235)
+}
+
+/* ******************************* LIST  ******************************* */
+.list-title{
+  margin-left: 80px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.list-cards{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+
+
+/* ****************************** DETAIL  ****************************** */
+
+.dtl-cont{
+  width: 80%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.dtl-title{
+  border-bottom: 1px solid rgb(46, 46, 46);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* ******************************* LOGIN  ******************************* */
+
+.login-page{
+  width: 440px;
+  margin: auto;
+  margin-top: 150px;
+  padding: 15px;
+  text-align: center;
+}
+
+.login-form{
+  padding: 30px;
+}
+
+.login-btn{
+  width: 50%;
+  margin: auto;
+}
+
+
+/* ******************************* Signup  ******************************* */
+
+.signup-main{
+   margin-top: 30px;
+}
+.signup-main h1{
+  text-align: center;
+}
+
+.signup-form{
+
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.signup-btn{
+  
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ******************************* NEW  ******************************* */
+
+.form-content{
+  margin: 20px;
+  text-align: center;
+  border: 10px;
+  padding: 10px;
+  border-color: rgb(146, 69, 69);
+  padding-bottom: 20px;
+}
+
+.form-style{
+  text-align: left;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  width: 80%;
+}
+
+.form-style label{
+  margin-right: 10px;
+  text-align: right;
+  display: flex;
+}
+
+.form-style input{
+  width: 40%;
+}
+
+.form-style textarea{
+  width: 100%;
+}
+.buttn{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ******************************* PassRestSuccess  ******************************* */
+
+.reset-success{
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+
+/* ******************************* Logout  ******************************* */
+
+.logout-btn{
+  margin-top: 10px;
+}
